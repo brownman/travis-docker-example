@@ -64,4 +64,4 @@ sleep 5
 
 # Use docker
 docker build -t="thearthur/test" . 
-#docker run ubuntu /bin/echo hello world
+docker run "thearthur/test" -t="thearthur/test" "cd /data/wordopia && /usr/local/bin/lein test"
