@@ -63,5 +63,8 @@ docker -d &
 sleep 5
 
 # Use docker
-docker build -t="thearthur/test" . 
-docker run "thearthur/test" -t="thearthur/test" "cd /data/wordopia && /usr/local/bin/lein test"
+#docker build -t="thearthur/test" . 
+#docker run "thearthur/test" -t="thearthur/test" "cd /data/wordopia && /usr/local/bin/lein test"
+docker build -t="brownman/gitlab-ci-runner-nodejs"
+docker run "brownman/gitlab-ci-runner-nodejs" -t="brownman/gitlab-ci-runner-nodejs" "dpkg -l | grep cowsay"
+
